@@ -102,7 +102,7 @@ def runRECORD(c, file_name):
         runProcess(command)
 
         # IMCA
-        command = args.imca + "find_variants.sh -w " + cwd + "/workspace/chr" + c + " -m /home/klaratrzcinska/MUMmer3.23/ -o " + cwd + "/workspace/chr" + c + "/wyniki_mica_chr" + c + ".vcf"
+        command = args.imca + "find_variants.sh -w " + cwd + "/workspace/chr" + c + " -m " + args.mummer + " -o " + cwd + "/workspace/chr" + c + "/wyniki_mica_chr" + c + ".vcf"
         runProcess(command)
 
         print 'ok'
